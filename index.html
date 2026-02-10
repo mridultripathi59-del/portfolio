@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mridul Tripathi – BCA student, aspiring AI/ML professional, portfolio website.">
+  <title>Mridul Tripathi | BCA Student & AI Enthusiast</title>
+
+  <style>
+    * { box-sizing: border-box; }
+
+    :root{
+      --bg:#0f172a;
+      --card:#020617;
+      --text:#e5e7eb;
+      --accent:#38bdf8;
+    }
+
+    body.light{
+      --bg:#f8fafc;
+      --card:#ffffff;
+      --text:#020617;
+      --accent:#2563eb;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      scroll-behavior: smooth;
+      transition: background 0.4s ease, color 0.4s ease;
+    }
+
+    header {
+      background: linear-gradient(135deg, #6366f1, #22d3ee);
+      padding: 60px 20px;
+      text-align: center;
+      animation: fadeDown 1.2s ease;
+    }
+
+    header img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #fff;
+      margin-bottom: 15px;
+      transition: transform 0.4s ease;
+    }
+
+    header img:hover { transform: scale(1.08); }
+
+    header h1 {
+      margin: 10px 0 5px;
+      font-size: 2.6rem;
+      color: #fff;
+    }
+
+    header p {
+      font-size: 1.15rem;
+      color: #f8fafc;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 28px;
+      border-radius: 16px;
+      margin-bottom: 28px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.45);
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.7s ease;
+    }
+
+    .card.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+    }
+
+    .card h2 {
+      margin-bottom: 15px;
+      color: var(--accent);
+      border-bottom: 1px solid #1e293b;
+      padding-bottom: 8px;
+    }
+
+    ul { list-style: none; padding-left: 0; }
+    ul li { padding: 6px 0; }
+
+    .skills span {
+      display: inline-block;
+      background: #1e293b;
+      padding: 10px 16px;
+      margin: 6px;
+      border-radius: 999px;
+      font-size: 0.95rem;
+      transition: all 0.3s ease;
+    }
+
+    .skills span:hover {
+      background: var(--accent);
+      color: #020617;
+      transform: translateY(-4px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 10px;
+      background: var(--card);
+      color: #94a3b8;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+
+    a:focus, button:focus {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+    }
+
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body>
+
+<button id="themeToggle"
+  aria-label="Toggle theme"
+  style="position:fixed;top:20px;right:20px;padding:10px 16px;border-radius:999px;border:none;cursor:pointer;font-weight:600;z-index:1000;">
+  🌙 Dark
+</button>
+
+<header>
+  <img src="photo.jpg" alt="Mridul Tripathi" style="filter: contrast(1.1) brightness(1.05);" />
+  <h1>Mridul Tripathi</h1>
+  <p>Age: 19 | BCA Student & Aspiring AI/ML Professional</p>
+</header>
+
+<section>
+
+  <div class="card">
+    <h2>About Me</h2>
+    <p>
+      I’m <strong>Mridul Tripathi</strong>, a BCA student based in Dehradun with a growing focus on
+      <strong>Artificial Intelligence, Machine Learning, and data analysis</strong>.
+      I enjoy building strong programming fundamentals, exploring new technologies,
+      and turning ideas into practical solutions. I’m actively learning, improving,
+      and preparing myself for opportunities in the tech industry.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Hobbies</h2>
+    <ul>
+      <li>🎮 Esports – Valorant 🔫</li>
+      <li>🎤 Singing – Rock / Metal 🤘</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Skills</h2>
+    <div class="skills">
+      <span>C</span>
+      <span>Java</span>
+      <span>MS Excel</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Education</h2>
+    <ul>
+      <li>Class 10th – 86% (2023) – Carman School, Premnagar, Dehradun</li>
+      <li>Class 12th – 85% (2025) – Carman School, Premnagar, Dehradun</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Currently Pursuing</h2>
+    <p>
+      Bachelor of Computer Applications (BCA) with a focus on
+      <strong>AI & Machine Learning</strong>, while staying open to collaborations,
+      projects, and continuous learning.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Contact</h2>
+    <p>📞 Phone: 8865941335</p>
+    <p>📧 Email: <a href="mailto:mridultripathi59@gmail.com">mridultripathi59@gmail.com</a></p>
+  </div>
+
+</section>
+
+<footer>
+  <p>© 2026 Mridul Tripathi. All rights reserved.</p>
+</footer>
+
+<script>
+  const cards = document.querySelectorAll('.card');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    });
+  }, { threshold: 0.2 });
+
+  cards.forEach(card => observer.observe(card));
+
+  const toggle = document.getElementById('themeToggle');
+  toggle.addEventListener('click', () => {
+    document.body.classList.toggle('light');
+    toggle.textContent =
+      document.body.classList.contains('light') ? '☀️ Light' : '🌙 Dark';
+  });
+</script>
+
+</body>
+</html>
